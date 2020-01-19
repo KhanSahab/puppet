@@ -6,9 +6,9 @@
 #   include wincdemu
 class wincdemu {
 package { 'WinCDEmu-4.1.exe':
- ensure 			=> installed,
- source 			=> "C:\Users\akhan943\Downloads\WinCDEmu-4.1.exe",
+ ensure 		=> installed,
+ source 		=> "C:\Users\akhan943\Downloads\WinCDEmu-4.1.exe",
  install_options	=> ['/S'],
- require 			=> Download_file['WinCDEmu-4.1.exe']
+ require 		=> Download_file['WinCDEmu-4.1.exe']
 }
 }
